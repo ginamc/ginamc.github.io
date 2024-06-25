@@ -2,3 +2,29 @@ baseURL: https://example.org/
 languageCode: en-us
 title: gina cairney
 theme: ["PaperMod"]
+
+params:
+  # defaultTheme: light
+  defaultTheme: dark
+  # defaultTheme: auto
+  disableThemeToggle: true
+
+  homeInfoParams:
+    Title: Hi, hello 👋🏼
+    Content: add another line of something something
+
+  socialIcons: # optional
+    - name: "twitter"
+      url: "https://x.com/ginamc"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/gmcairney/"
+    - name: "medium"
+      url: "https://medium.com/@postsbygina"
+    - name: "github"
+      url: "https://github.com/ginamc"
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
