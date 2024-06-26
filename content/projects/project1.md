@@ -3,7 +3,7 @@ title: "Project 1"
 # summary: "some summary."
 date: 2023-01-13
 slug: project1
-draft: false
+draft: true
 ShowToc: true
 params:
     author: Gina
