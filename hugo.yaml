@@ -1,4 +1,4 @@
-baseURL: https://example.org/
+baseURL: https://ginamc.github.io
 languageCode: en-us
 title: gina cairney
 theme: ["PaperMod"]
@@ -28,3 +28,48 @@ outputs:
     - HTML
     - RSS
     - JSON # necessary for search
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10   
+    - identifier: about
+      name: About
+      url: /about
+      weight: 20   
+    - identifier: projects
+      name: projects
+      url: /projects/
+      weight: 30
+    - identifier: blog
+      name: Blog
+      url: https://ginamc.github.io/wordsbydesign
+      weight: 40
+
+markup:
+  goldmark:
+    extensions:
+      definitionList: true
+      extras:
+        subscript:
+          enable: true
+        superscript:
+          enable: true
+      footnote: true
+      linkify: true
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
+    parser:
+      attribute:
+        block: false
+        title: true
+      autoHeadingID: true
+      autoHeadingIDType: github
+    renderer:
+      hardWraps: false
+      unsafe: true # <- this enables HTML rendering
+      xhtml: false
